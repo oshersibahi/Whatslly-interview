@@ -1,0 +1,21 @@
+Hey Osher,
+
+How are you?
+
+Thanks for submitting the task, it looks good!
+I do have some feedback:
+1. In your test, you disregarded the JSON response returned from the endpoint. 
+	This is an important part of the test as we don't only want to check that the server is alive - we want to validate that the properties returned are valid.
+2. You didn't include a properties file in the test package, so any properties that you put in the main package won't apply to your tests.
+3. As mentioned on our call - every piece of code should always be developed in a re-usable way,
+	 so we won't need to re-write it when we had a similar method and we can simply leverage code that has already been written.
+	 In the tests you built, the endpoint is static (host + path) so we cannot reuse it.
+4. Why did you decide to put all your code in one file and not breaking it into multiple? For example, from my experience enums need to be on a standalone file for re-usability.
+5. I am missing some comments and explanations about what was done here. Other developers won't understand it otherwise.
+
+Yanir.
+
+Yanir Calisar
+CEO & Founder, Whatslly
+(IL) +972.52.397.0116   | WhatsApp
+
